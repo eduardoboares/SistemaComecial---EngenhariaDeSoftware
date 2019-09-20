@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>Estoque</title>
+       <link rel="stylesheet" type="text/css" href="design.css" media="screen" />
+       <script>
+            function Adicionar() {
+              alert("Sucesso ao adicionar item!");
+            }
+        </script>
+   </head>
+   <body>
+    
+        <ul>
+                <li><a href="home.html"><img src="icones/home.png">Home</a></li>
+                <li><a href="estoque.html"><img src="icones/estoque.png">Estoque</a></li>
+                <li><a href="vendas.html"><img src="icones/vendas.png">Pedido de Venda</a></li>
+            </ul>
+
+                <div class="pagina">
+                    <div>
+                        <h2>ADICIONAR ITEM</h2>
+                        <div>
+                            <label>Codigo do Item</label><input type="text">
+                            <label>Nome</label><input type="text">
+                            <label>Marca</label><input type="text">
+                            <label>Unidade</label><input type="text">
+                            <label>Quantidade</label><input type="text">
+                            <label>Preço Unitário</label><input type="text">
+                        </div>
+                        <br>
+                        <div class="btn-group">
+                            <a  onclick="Adicionar()" href="estoque.html" class="button">Adicionar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>Compras</title>
+       <link rel="stylesheet" type="text/css" href="design.css" media="screen" />
+       <script>
+            function Adicionar() {
+              alert("RELATÓRIO GERENCIAL DA COMPRA  \n\n 1. Notebook Dell I15-3567-D15 Intel Core i3 7020U 15,6 4GB HD 1 TB Linux 7ª Geração (un. unidade) – preço unitário: R$1.800,00  – quantidade: 1 \n Total Item: R$1.800,00 \n\n  2. Notebook Samsung E30 Intel Core i3 7020U 15,6 4GB HD 1 TB Windows 10 7ª Geração (un. unidade) – preço unitário: R$1.800,00  – quantidade: 1 \n Total Item: R$1.800,00 \n\n VALOR TOTAL DA COMPRA R$ 3600,00");
+            }
+        </script>
+   </head>
+   
+   <body>
+        <div class="grid-container">
+            <div>
+                <div class="sidenav">
+                    <a class="active" href="home.html"><img src="icones/home.png">Home</a>
+                    <a href="estoque.html"><img src="icones/estoque.png">Estoque</a>
+                    <a href="vendas.html"><img src="icones/vendas.png">Pedido de Venda</a>
+                </div>
+            </div>
+            <div>
+                <div class="pagina">
+                    <div>
+                        <h2>PEDIDO DE COMPRA</h2>
+                        <hr/><br>
+                        <form>
+                            <label>Número da Compra:</label>
+                            <input type="number" value="00041" disabled>
+                            <label>Nome do Fornecedor:</label>
+                            <input type="text">
+                        </form>
+                    </div>
+                        <br><br>
+                        <table>
+                            <tr>
+                                <th>Codigo do Item
+                                <th>Nome</th>
+                                <th>Marca</th>
+                                <th>Unidade</th>
+                                <th>Quantidade</th>
+                                <th>Preço Unitário</th>
+                            </tr>
+                                <tr>
+                                    <td>
+                                        <select name="itens">
+                                            <option value="I0001">I0001</option>
+                                            <option value="I0002">I0002</option>
+                                            <option value="I0003">I0003</option>
+                                            <option value="I0004">I0004</option>
+                                        </select>
+                                    </td>
+                                    <td>Notebook Dell I15-3567-D15 Intel Core i3 7020U 15,6" 4GB HD 1 TB Linux 7ª Geração</td>
+                                    <td>Dell</td>
+                                    <td>Quilos</td>
+                                    <td><input type="number"></td>
+                                    <td>R$1.800,00</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="itens">
+                                            <option value="I0001">I0001</option>
+                                            <option value="I0002">I0002</option>
+                                            <option value="I0003">I0003</option>
+                                            <option value="I0004">I0004</option>
+                                        </select>
+                                    </td>
+                                    <td>Notebook Samsung E30 Intel Core i3 7020U 15,6" 4GB HD 1 TB Windows 10 7ª Geração</td>
+                                    <td>Dell</td>
+                                    <td>Quilos</td>
+                                    <td><input type="number"></td>
+                                    <td>R$1.800,00</td>
+                                </tr>
+                        </table>
+                        <br>
+                        <div class="btn-group">
+                            <label>Total:</label><input type="text" value="R$ 3600,00" disabled><br><br>
+                            <button onclick="Adicionar()" class="button">Adicionar</button>
+                            <button class="button">Limpar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </body>
+</html>

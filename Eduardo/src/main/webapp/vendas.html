@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>Vendas</title>
+       <link rel="stylesheet" type="text/css" href="design.css" media="screen" />
+       <script>
+            function Adicionar() {
+              alert("RELATÓRIO GERENCIAL DA VENDA  \n\n 1. Parafusadeira-Furadeira à Bateria Bosch 12V GSR 1000 - Bivolt (un. unidade) – Preço: R$199,99  – quantidade: 1 \n Total Item: R$199,99 \n\n  2. Escada 6 degraus aço (un. unidade) – preço unitário: R$300,00  – quantidade: 2 \n Total Item: R$600,00 \n\n VALOR TOTAL DA VENDA R$ 799,99");
+            }
+        </script>
+   </head>
+   
+   <body>
+
+        <ul>
+                <li><a href="home.html"><img src="icones/home.png">Home</a></li>
+                <li><a href="estoque.html"><img src="icones/estoque.png">Estoque</a></li>
+                <li><a href="vendas.html"><img src="icones/vendas.png">Pedido de Venda</a></li>
+        </ul>
+
+            <div>
+                <div class="pagina">
+                   
+                        <h2>PEDIDO DE VENDA</h2>
+                        <hr/><br>
+                
+                        <table>
+                            <tr>
+                                <th>Codigo do Item
+                                <th>Nome</th>
+                                <th>Marca</th>
+                                <th>Unidade</th>
+                                <th>Quantidade</th>
+                                <th>Preço Unitário</th>
+                            </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Buscar..."/>
+                                    </td>
+                                    <td>Parafusadeira-Furadeira à Bateria Bosch 12V GSR 1000 - Bivolt</td>
+                                    <td>Bosch</td>
+                                    <td>Quilos</td>
+                                    <td><input type="number"></td>
+                                    <td>R$199,99</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Buscar..."/>
+                                    </td>
+                                    <td>Escada 6 degraus aço</td>
+                                    <td>Leroy</td>
+                                    <td>Quilos</td>
+                                    <td><input value="2"></td>
+                                    <td>R$300,00</td>
+                                </tr>
+                        </table>
+                        <a class="link" href="#">Adicionar Item</a>
+                        <br><br>
+                        <div class="grupo-btn">
+                            <label>Total da Venda:</label><input type="text" value="R$ 799,99" disabled><br><br>
+                            <button onclick="Adicionar()" class="button">Finalizar venda</button>
+                            <button class="button">Limpar Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </body>
+</html>
